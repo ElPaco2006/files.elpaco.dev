@@ -2,9 +2,9 @@ name: files_elpaco_dev
 services:
   website:
     image: nginx:latest
-    container_name: files_elpaco.dev
+    container_name: files.elpaco.dev
     volumes:
-      - ./data:/usr/share/nginx/html
+      - ./html:/var/www
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 8080:80
